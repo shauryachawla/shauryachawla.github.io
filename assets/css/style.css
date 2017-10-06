@@ -8,14 +8,33 @@ body p {
 
 }
 
+
 a {
+  color:#333333 !important;
+  /* First we need to help some browsers along for this to work.
+     Just because a vendor prefix is there, doesn't mean it will
+     work in a browser made by that vendor either, it's just for
+     future-proofing purposes I guess. */
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.3s;
+}
+
+.links a:hover {
+	color: #EB06B2 !important;
+	text-decoration: none !important;
+}
+
+.description a {
 	color: #EB06B2 !important;
 }
 
 body h1 {
 	font-family: 'PT Serif', serif;
 }
-
 
 #menu {
 	display: block;
@@ -27,15 +46,23 @@ body h1 {
 	/*border: solid;*/
 }
 
-.banner-text {
-	/*border: solid;*/
+.dp {
+	padding-right: 50px !important;
+}
+
+.title {
+	padding-top: 22px !important;
+	padding-left: 2px !important;
+}
+
+.banner {
 	
-	text-align: center;
+	text-align: left;
 	font-size: 210%;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-.banner-text span {
+.banner span {
 	color: #878787;
 	font-size: 60%;
 	text-align: left !important;
