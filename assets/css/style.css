@@ -69,7 +69,7 @@ body h1 {
 
 .title {
 	padding-top: 22px !important;
-	padding-left: 2px !important;
+	padding-left: 2px !important;  
 }
 
 .banner {
@@ -145,8 +145,20 @@ i {
     padding: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+
+    .banner .row{margin: auto;
+    width: 50%;
+    }
+    
+}
+
+/** On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
+**/
