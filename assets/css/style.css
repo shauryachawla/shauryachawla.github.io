@@ -35,10 +35,6 @@ a {
   transition:.3s;
 }
 
-.links a:hover {
-	color: #EB06B2 !important;
-	text-decoration: none !important;
-}
 
 .description a {
 	color: #EB06B2 !important;
@@ -94,6 +90,11 @@ i {
 	font-size: 18px;
 }
 
+.links a:hover {
+  color: #EB06B2 !important;
+  text-decoration: none !important;
+}
+
 /*NAVBAR*/
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -105,7 +106,7 @@ i {
     background-color: #FFFFFF; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.3s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
@@ -124,6 +125,7 @@ i {
   padding-right: 40px;
 }
 
+.top-buffer { margin-top:20px; }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
@@ -141,19 +143,16 @@ i {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-    transition: margin-right .5s;
+    transition: margin-right .3s;
     padding: 20px;
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width:768px) {
   /* For mobile phones: */
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
-
-    .banner .row{margin: auto;
-    width: 50%;
-    }
-    
+    .dp {display: block; margin: auto;}
+    .top-header {text-align:center;}
 }
 
 /** On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
