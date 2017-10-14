@@ -146,10 +146,12 @@ i {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 
-    .dp {display:block;margin-left:auto;margin-right:auto;}
+    .text-center {text-align:center;}
+
+    .index-dp {display:block;margin-left:auto;margin-right:auto;}
     .dp-text {text-align:center;padding-left:0!important;}
 
-    .top-header {text-align:center;}
+    .dp {}
 }
 
 /** On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
