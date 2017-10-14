@@ -147,7 +147,7 @@ i {
     .sidenav a {font-size: 18px;}
 
     .dp {display:block;margin-left:auto;margin-right:auto;}
-    .text-center {text-align:center;}
+    .dp-text {text-align:center;padding-left:0!important;}
 
     .top-header {text-align:center;}
 }
