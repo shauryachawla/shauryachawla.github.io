@@ -113,10 +113,8 @@ i {
     transition: 0.3s;
 }
 
-.top-header {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 40px;
+#top-header {
+  
 }
 
 .top-buffer { margin-top:20px; }
@@ -141,7 +139,7 @@ i {
     padding: 20px;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
   /* For mobile phones: */
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -151,7 +149,8 @@ i {
     .index-dp {display:block;margin-left:auto;margin-right:auto;}
     .dp-text {text-align:center;padding-left:0!important;}
 
-    .dp {}
+    #about-dp-text {font-size: 18px !important;}
+    .dp {height: 60px !important;}
 }
 
 /** On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) 
